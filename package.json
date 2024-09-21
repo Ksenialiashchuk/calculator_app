@@ -8,7 +8,7 @@
     "build": "webpack",
     "start": "webpack serve --open",
     "lint": "eslint .eslintrc.json",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +24,7 @@
     "globals": "^15.9.0",
     "html-webpack-plugin": "^5.6.0",
     "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
     "mini-css-extract-plugin": "^2.9.1",
     "prettier": "^3.3.3",
     "style-loader": "^4.0.0",
@@ -33,5 +34,11 @@
   },
   "dependencies": {
     "node": "^22.9.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js, jsx}": [
+      "eslint",
+      "prettier --write"
+    ]
   }
 }

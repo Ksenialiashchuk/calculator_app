@@ -46,10 +46,17 @@ buttons.addEventListener('click', (event) => {
 
 function handleNumber(number) {
     function checkIsDotTypedTwice(value) {
+        if (typeof value !== 'string') {
+            console.warn('checkIsDotTypedTwice received a non-string value:', value);
+            return false;
+        }
         if (number === '.') {
             return value.includes('.');
         }
+        return false;
     }
+
+    console.log('firstValue:', firstValue, 'secondValue:', secondValue);
 
     if (awaitingSecondValue) {
         if (secondValue.length > 8 || checkIsDotTypedTwice(secondValue)) {
@@ -75,6 +82,7 @@ function handleNumber(number) {
         display.textContent = firstValue;
     }
 }
+
 function handleOperator(selectedOperator) {
     if (!firstValue) return;
 
