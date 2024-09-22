@@ -117,7 +117,7 @@ function calculateResult() {
             return number.toFixed(4);
         }
 
-        return number;
+        return number.toString()
     }
 
     function addOperation() {
@@ -148,6 +148,12 @@ function calculateResult() {
     display.textContent = result;
     firstValue = result;
 
+    if (result.length > 9) {
+        display.classList.add('display--small');
+    } else {
+        display.classList.remove('display--small');
+    }
+
     subDisplay.textContent = '';
     operator = '';
     awaitingSecondValue = false;
@@ -160,6 +166,7 @@ function clearAll() {
     result = '';
 
     display.textContent = '0';
+    display.classList.remove('display--small');
     awaitingSecondValue = false;
     subDisplay.textContent = '';
 }
