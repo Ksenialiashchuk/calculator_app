@@ -48,7 +48,6 @@ buttons.addEventListener('click', (event) => {
 function handleNumber(number) {
     function checkIsDotTypedTwice(value) {
         if (typeof value !== 'string') {
-            console.warn('checkIsDotTypedTwice received a non-string value:', value);
             return false;
         }
         if (number === '.') {
@@ -56,8 +55,6 @@ function handleNumber(number) {
         }
         return false;
     }
-
-    console.log('firstValue:', firstValue, 'secondValue:', secondValue);
 
     if (awaitingSecondValue) {
         if (secondValue.length > 8 || checkIsDotTypedTwice(secondValue)) {
@@ -90,7 +87,7 @@ function handleOperator(selectedOperator) {
     const operators = {
         add: '+',
         subtract: '-',
-        multiply: '*',
+        multiply: '×',
         divide: '÷',
     };
 
@@ -206,7 +203,7 @@ function applyPercent() {
         if (isNaN(percentValue)) {
             display.textContent = firstValue || '0';
         } else {
-            firstValue = limitLength(percentValue.toString());
+            firstValue = limitLength(percentValue.toPrecision(6).toString());
             display.textContent = firstValue;
         }
     }

@@ -8,7 +8,7 @@ My own calculator app for Innowise Internship by Ksenia Liashchuk. The app is cr
 
 ## How to run the app
 
-There are some tips if you want to run this calculator locally.
+There are some tips if you want to run this calculator locally. But to activate these commands, nodeJS and Git must already be installed.
 
 ```bash
 npm run build

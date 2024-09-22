@@ -17,8 +17,8 @@ module.exports = {
                     {
                         loader: 'style-loader',
                         options: {
-                            insert: 'head', // insert style tag inside of <head>
-                            injectType: 'singletonStyleTag' // this is for wrap all your style in just one style tag
+                            insert: 'head',
+                            injectType: 'singletonStyleTag'
                         },
                     },
                     "css-loader",
