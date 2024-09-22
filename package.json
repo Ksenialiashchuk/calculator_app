@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
+    "deploy": "webpack && gh-pages -d build",
     "start": "webpack serve --open",
     "lint": "eslint .eslintrc.json",
     "prepare": "husky"
@@ -33,6 +34,7 @@
     "webpack-dev-server": "^5.1.0"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "node": "^22.9.0"
   },
   "lint-staged": {
