@@ -1,4 +1,5 @@
 import './style.css';
+import { themeToggler } from './theme';
 
 const display = document.querySelector('.display');
 const buttons = document.querySelector('.buttons');
@@ -210,9 +211,5 @@ function applyPercent() {
         }
     }
 }
-function themeToggler() {
-    document.body.classList.toggle("dark-theme");
-}
 
 document.querySelector('.button-theme').addEventListener('click', themeToggler);
-

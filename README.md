@@ -1,6 +1,10 @@
-# Foobar
 
 My own calculator app for Innowise Internship by Ksenia Liashchuk. The app is created by using HTML, JavaScript, Webpack. This calculator has user-friendly interfase and it allows basic arithmetic operations. Also you can change themes(light/dark).
+
+## Task
+ 
+
+
 
 ## How to run the app
 
@@ -23,15 +27,14 @@ git clone https://github.com/Ksenialiashchuk/calculator-app.git
 ```
 calculator-app/
 |
-├── build/               # Compiled files folder (for build tools)
+├── husky/
+│   ├── pre-commit      # A Git hook that runs before a commit is made.
+├── build/              # Compiled files folder (for build tools)
 ├── src/                # Source files folder
-│   ├── css/            # Source styles
-│   │   
-│   │   
-│   ├── js/             # Source JavaScript modules
-│   │   
-│   │   
-│   └── index.js        # Main file combining all modules
+│   ├── index.html     # Main HTML file containing the calculator markup
+│   ├── index.js        # Main file combining all modules
+│   ├── style.css       # Source styles
+│   ├── theme.js        # Source JavaScript modules    
 └── README.md           # Project documentation
 ```
 
