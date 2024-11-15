@@ -1,8 +1,4 @@
-My own calculator app for Innowise Internship by Ksenia Liashchuk. The app is created by using HTML, JavaScript, Webpack. This calculator has user-friendly interfase and it allows basic arithmetic operations. Also you can change themes(light/dark).
-
-## Task
-Application requirements: [link](https://docs.google.com/document/d/1zpXXeSae-BlcxPKgw3DhxZA92cspVailrPYoaXSYrW8/edit#heading=h.5dt3hghpa22f
-)
+My own calculator app. The app is created by using HTML, JavaScript, Webpack. This calculator has user-friendly interfase and it allows basic arithmetic operations. Also you can change themes(light/dark).
  
 ## How to run the app
 
